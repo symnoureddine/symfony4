@@ -1,0 +1,17 @@
+#index:
+#    path: /
+#    controller: App\Controller\DefaultController::index
+acme_privacy:
+    path:          /privacy
+    controller:    Symfony\Bundle\FrameworkBundle\Controller\TemplateController
+    defaults:
+        # the path of the template to render
+        template:  'static/privacy.html.twig'
+
+        # special options defined by Symfony to set the page cache
+        maxAge:    86400
+        sharedAge: 86400
+
+        # optionally you can define some arguments passed to the template
+        site_name: 'ACME'
+        theme: 'dark'
